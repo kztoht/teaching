@@ -36,14 +36,22 @@
         .category-links a {
             text-decoration: none;
             color: #fff;
-            background-color: #3b5998; /* Cobalt blue color for the links */
             padding: 20px 40px;
-            border-radius: 10px;
+            border-radius: 0; /* Rectangular shape */
             font-size: 1.5em;
             transition: background-color 0.3s;
         }
-        .category-links a:hover {
+        .category-links a.kisozemi {
+            background-color: #3b5998; /* Cobalt blue color for the 基礎ゼミ link */
+        }
+        .category-links a.kisozemi:hover {
             background-color: #2a3d6e; /* Darker cobalt blue for hover effect */
+        }
+        .category-links a.ase {
+            background-color: #ff6600; /* Orange color for the ASE link */
+        }
+        .category-links a.ase:hover {
+            background-color: #cc5200; /* Darker orange for hover effect */
         }
     </style>
 </head>
@@ -53,8 +61,8 @@
     </header>
     <main>
         <div class="category-links">
-            <a href="https://kztoht.github.io/kisozemi/index.html">基礎ゼミ</a>
-            <a href="https://kztoht.github.io/ASE/index.html">ASE</a>
+            <a class="kisozemi" href="https://kztoht.github.io/kisozemi/index.html">基礎ゼミ</a>
+            <a class="ase" href="https://kztoht.github.io/ASE/index.html">ASE</a>
         </div>
     </main>
 </body>
